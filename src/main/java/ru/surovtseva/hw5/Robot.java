@@ -1,18 +1,15 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public class Robot implements Action{
     private String name;
     private float maxRun;
     private float maxJump;
 
-    public Robot(String name, float maxRun, float maxJump) {
+    Robot(String name) {
         this.name = name;
-        this.maxRun = maxRun;
-        this.maxJump = maxJump;
-//        maxRun = (float)(Math.random()*101+250);
-//        maxJump = (float)(Math.random()*1.5+0.5);
+        maxRun = (float)(Math.random()*101+250);
+        maxJump = (float)(Math.random()*1.5+0.5);
     }
-
     @Override
     public String getName(){
         return name;

@@ -1,10 +1,10 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public class Wall implements Hurdles {
     private float parameter;
     private String type;
 
-    public Wall(float parameter) {
+    Wall(float parameter) {
         this.parameter = parameter;
         type = "wall";
     }
@@ -23,4 +23,7 @@ public class Wall implements Hurdles {
     public boolean doIT(Action player) {
         return player.toJump(parameter);
     }
+
+
+
 }

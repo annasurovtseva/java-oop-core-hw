@@ -1,15 +1,14 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public class FunnyStarts {
     public static void main(String[] args) {
 
-
-        Action Tom = new Human("Tom",200,1.5f);
-        Action Jim = new Human("Jim",220,0.9f);
-        Action Barsik = new Cat("Barsik",250,1.1f);
-        Action Pushok = new Cat("Pushok",190,1.5f);
-        Action C3PO = new Robot("C3PO",210,1.4f);
-        Action R2D2 = new Robot("R2D2",270,1.2f);
+        Action Tom = new Human("Tom");
+        Action Jim = new Human("Jim");
+        Action Barsik = new Cat("Barsik");
+        Action Pushok = new Cat("Pushok");
+        Action C3PO = new Robot("C3PO");
+        Action R2D2 = new Robot("R2D2");
 
         Action[] players = {Tom, Jim, Barsik, Pushok, C3PO, R2D2};
 
@@ -26,7 +25,7 @@ public class FunnyStarts {
                 if (hurdle.doIT(player)){
                     System.out.println(player.getName() + " преодолел препятсвие: " + hurdle.getType()+
                             " - " + hurdle.getParameter());
-                } else {
+                  } else {
                     System.out.println(player.getName() + " не смог преодолеть препятствие: " +
                             hurdle.getType()+ " - " + hurdle.getParameter() + " и выбывает из марафона");
                     break;

@@ -1,10 +1,10 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public class Track implements Hurdles {
     private float parameter;
     private String type;
 
-    public Track(float parameter) {
+    Track(float parameter) {
         this.parameter = parameter;
         type = "track";
     }
@@ -23,4 +23,6 @@ public class Track implements Hurdles {
     public boolean doIT(Action player) {
         return player.toRun(parameter);
     }
+
+
 }

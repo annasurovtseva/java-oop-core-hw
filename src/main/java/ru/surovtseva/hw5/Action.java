@@ -1,6 +1,7 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public interface Action {
+
     String getInfo();
     String getName();
     boolean toRun(float length);

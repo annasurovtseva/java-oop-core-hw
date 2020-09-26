@@ -1,6 +1,7 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
 public interface Hurdles {
+
     float getParameter();
     String getType();
     boolean doIT(Action player);

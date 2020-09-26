@@ -1,16 +1,14 @@
-package ru.surovtseva.hw4.lesson1;
+package ru.surovtseva.hw5;
 
-public class Cat implements Action {
+public class Human implements Action {
     private String name;
     private float maxRun;
     private float maxJump;
 
-    public Cat(String name, float maxRun, float maxJump) {
+    Human(String name) {
         this.name = name;
-        this.maxRun = maxRun;
-        this.maxJump = maxJump;
-//        maxRun = (float)(Math.random()*101+200);
-//        maxJump = (float)(Math.random()*2+0.5);
+        maxRun = (float)(Math.random()*101+150);
+        maxJump = (float)(Math.random()+0.5);
     }
     @Override
     public String getName(){
